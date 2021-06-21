@@ -20,7 +20,7 @@
     
   
 ## Live link
-    The deployed project can be accessed through this link -  [Akan naming](...../)
+    The deployed project can be accessed through this link -  [Akan naming](https://kiruisang.github.io/akan-naming/)
 ​
 ## Technologies used
     - HTML
