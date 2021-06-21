@@ -1,112 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js"></script>
-    <title>Akan naming</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Akan Naming</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <div class="content">
-        <div class="body-container">
-            <div class="jumbotron">
-                <div class="row">
-                    <div col-md-6>
-                        <h1><strong><a href="https://en.wikipedia.org/wiki/Akan_names">AKAN NAMING</a></strong></h1>
-                        <p>This website will give you a name, more specifically a first name according to the day of the week you were born.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="./images/images.jpeg" alt="">
-                    </div>
-                </div>
-            <div class="intro">
-                <p>The Akans are a meta-ethnicity who primarily live in Ghana and Ivory Coast with a population of around 20 million people who share a lot of common traits. Some of these shared traits include their naming system where the first name of the children depends on the day of the week they were born.This system is fairly unique to the Akans only. Enter your date of birth below to find out your Akan name:</p>
+<body class="container-fluid" style="background-image:url(images/Be.jpg);">
+  <div id="heading"> 
+    <img src="images/children.jpeg" alt="children">
+    <h2 id="get">Get Your Akan Name below...</h2>
+    <img src="./images/images.jpeg" alt="">
+  </div>
+  <div class="overlay">
+      <div class="container">
+        <h2>Input your correct details here</h2>
+        <form name="myForm" class="form" onsubmit="validate();">
+          <div class="form-group">
+            <label for="number">Year of Birth:</label>
+            <input type="number" class="form-control" id="year" placeholder="Year of Birth" name="year">
+          </div>
+          <div class="form-group">
+            <label for="month">Month of Birth:</label>
+            <input type="number" class="form-control" id="month" placeholder="Birth month" name="month">
+          </div>
+          <div class="form-group">
+            <label for="date">Date of Birth:</label>
+            <input type="number" class="form-control" id="date" placeholder="Date of Birth" name="date">
+          </div>
+          <div class="form-group">
+            <label for="month">Gender</label><br>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="gender" id="male">&nbsp; Male 
+              </label>
             </div>
-            <form name="form_reg" >
-                First name: <input type="text" name="fname">
-                Second name: <input type="text" name="sname">
-              <select name="items"  id="items">  
-              <option  value="1">Female</option>  
-              <option value="2">Male</option>  
-              </select>
-                <br>
-                Date of Birth: <select name="birthDate" id="DD">
-                  <option value="1" id="first">1</option>
-                  <option value="2" id="second">2</option>
-                  <option value="3" id="third">3</option>
-                  <option value="4" id="fourth">4</option>
-                  <option value="5" id="fifth">5</option>
-                  <option value="6" id="sixth">6</option>
-                  <option value="7" id="seventh">7</option>
-                  <option value="8" id="eighth">8</option>
-                  <option value="9" id="ninth">9</option>
-                  <option value="10" id="tenth">10</option>
-                  <option value="11" id="eleventh">11</option>
-                  <option value="12" id="twelfth">12</option>
-                  <option value="13" id="thirteenth">13</option>
-                  <option value="14" id="fourteenth">14</option>
-                  <option value="15" id="fifteenth">15</option>
-                  <option value="16" id="sixteenth">16</option>
-                  <option value="17" id="seventeenth">17</option>
-                  <option value="18" id="eighteenth">18</option>
-                  <option value="19" id="nineteenth">19</option>
-                  <option value="20" id="twentieth">20</option>
-                  <option value="21" id="twentyFirst">21</option>
-                  <option value="22" id="twentySecond">22</option>
-                  <option value="23" id="twentyThird">23</option>
-                  <option value="24" id="twentyFourth">24</option>
-                  <option value="25" id="twentyFifth">25</option>
-                  <option value="26" id="twentySixth">26</option>
-                  <option value="27" id="twentySeventh">27</option>
-                  <option value="28" id="twentyEighth">28</option>
-                  <option value="29" id="twentyNinth">29</option>
-                  <option value="30" id="Thirtieth">30</option>
-                  <option value="31" id="ThirtyFirst">31</option>
-                </select> 
-                <select name="Month" id="MM">
-                  <option value="1" id="january">January</option>
-                  <option value="2" id="february">February</option>
-                  <option value="3" id="march">March</option>
-                  <option value="4" id="april">April</option>
-                  <option value="5" id="may">May</option>
-                  <option value="6" id="june">June</option>
-                  <option value="7" id="july">July</option>
-                  <option value="8" id="august">August</option>
-                  <option value="9" id="september">September</option>
-                  <option value="10" id="october">October</option>
-                  <option value="11" id="november">November</option>
-                  <option value="12" id="december">December</option>
-                </select> 
-                <input name="yearOfBirth" placeholder="Year" type="number" value="YY" width="20px;">
-                <br>
-            </form>
-            <button id= "sub-button" onclick="getsubmit()">SUBMIT</button>
-              <br>
-            <h3>Result:</h3>
-            <p class="text-black" id = "Result"></p>
-            <div></div>
-            <div class="contactinfo">
-                We at wecodecamp and weheartcode would love to get your feedback concerning any of our services provided , you can reach us in all social platforms or using the links below.
-                <div class="links">
-                    <div class="facebook">
-                        <a href="#"><img src="./images/facebook.html" alt=""></a>
-                    </div>
-                    <div class="twitter">
-                        <a href="#"><img src="./images/twitter.html" alt=""></a>
-                    </div>
-                    <div class="insta">
-                        <a href="#"><img src="./images/insta.html" alt=""></a>
-                    </div>
-                </div> 
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="gender" id="female">&nbsp; Female 
+              </label>
             </div>
-            <div class="author">
-                <h2><u>Author.</u></h2>
-                <em><strong>Kirui Brian Kipngeno</strong></em>
-            </div>
-        </div>
+          </div>
+          <button type="submit" class="btn btn-warning" onclick="findName();">Get Name</button>
+          <br>
+        </form>
+        <p id="results"> </p>
+      </div>
+  </div>
+  <div class="card-deck">
+    <div class="card ">
+      <div class="card-body text-center">
+        <p class="card-text">Akan naming is a system of naming children in Ghana and some other parts of west Africa where the first name of the children depending on their day fo the week they were born.
+            The Akans have a fairly unique naming system, which is used o the gender and day of the week so a boy born on Saturday would be called "Kwame" and so on.
+             Enter your date of birth below to find out your Akan name:  </p>
+      </div>
     </div>
+    <div class="card ">
+        <div class="card-body text-center">
+          <p class="card-text">Names are based on gender and the date you were born. <br>
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-globe fa-stack-1x" style="color:rgb(21, 117, 201)"></i>
+              </span><a href="https://en.wikipedia.org/wiki/Akan_names">Click here </a> i you want to learn more about Akan naming. </p>
+        </div>
+      </div>
+      </div>
+  </div>
+  <footer class="page-footer ">
+    <div class="footer-copyright text-center py-3">Copyright © 2021:
+      <a href="https://github.com/Kiruisang/akan-naming.git">Brian Kirui</a>
+    </div>
+  </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
