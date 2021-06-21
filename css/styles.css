@@ -1,0 +1,14 @@
+form {
+    padding-top: 10px;
+}
+body{
+    background-color: coral;
+}
+.content {
+    width: 75%;
+    background-color: chocolate;
+    align-items: center;
+}
+.author{
+    font-family: 'Gabriela';
+}
