@@ -1,4 +1,3 @@
-#  Delani Studio
 ## Project name
     - Akan naming
 ​
@@ -6,7 +5,7 @@
     - This website takes in  the user data in form of date of birth, month and year of birth. Using this data we calculate the respective Akan names and output it to the user.
 ​
 ## Author(s) information
-    - <a href = ">
+    - <a href = https://kiruisang.github.io/akan-naming/>
   
 ## Setup instructions
     - Ctrl Alt T to open the terminal
@@ -20,7 +19,7 @@
     
   
 ## Live link
-    The deployed project can be accessed through this link -  [Akan naming](https://kiruisang.github.io/akan-naming/)
+    The deployed project can be accessed through this link -  [Akan naming](/https://kiruisang.github.io/akan-naming/)
 ​
 ## Technologies used
     - HTML
