@@ -8,7 +8,7 @@ body{
        background-color: coral;
    }
    h1 {
-     font-family: 'Gugi', cursive;
+     font-family: 'Gabriela';
      font-weight: bolder;
      text-align: center;
      color: whitesmoke;
@@ -25,8 +25,8 @@ body{
    }
    .overlay{
      background-color: rgb(0,0,0,0.5);
-     margin-left: 25%;
-     margin-right: 16%;
+     margin-left: 10%;
+     margin-right: 10%;
      opacity: 0.9;
      border-radius: 10px;
    }
@@ -34,6 +34,7 @@ body{
      color: whitesmoke;
      text-shadow: 2px 2px 5px black;
      margin-bottom: 10px;
+     margin-right: 10%;
    }
    h2{
      text-align: center;
@@ -89,7 +90,7 @@ body{
    .card-deck{
      padding-bottom: 20px;
      font-weight: 600;
-     font-family: 'Sorts Mill Goudy', serif;
+     font-family: 'Gabriela';
      font-size: 18px;
    }
    .footer-copyright{
